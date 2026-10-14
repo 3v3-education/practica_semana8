@@ -21,5 +21,9 @@ from publicaciones import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.inicio, name='inicio'),
-    path('publicaciones/', views.lista_publicaciones, name='lista_publicaciones')
+    path("base/",views.base,name="base"),
+    path("publicaciones/", views.lista_publicaciones, name= "lista_publicaciones"),
+    path("autores/", views.lista_autores, name="lista_autores"),
+    path("contacto/", views.contacto, name= "contacto"),
+    path("nosotros/", views.about, name= "about_me"),
 ]

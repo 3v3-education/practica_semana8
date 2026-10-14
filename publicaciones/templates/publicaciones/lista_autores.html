@@ -1,0 +1,10 @@
+{% extends "publicaciones/base.html" %}
+{% block content %}
+    <h1>Listado de Autores</h1>
+        <ul>  
+            {% for autor in autores %} 
+            <li>{{ autor.nombre }} - {{ autor.apellido }}</li> 
+            {% endfor %}  
+        </ul>
+        <a href="{% url 'inicio' %}">Volver a inicio</a>
+{% endblock %}
